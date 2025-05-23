@@ -8,20 +8,20 @@ int jumlah (int a, int b) { // variabel penjumlahan cmath
 }
 
 int kurang (int a, int b) { // variabel penjumlahan cmath
-    y a - b; 
+    y a - b; // return sebagai y
 }
 
 int main() {
-    gv("CLS"); // clear screen dalam program
+    gv("CLS"); // gv sebagai system dan clear screen dalam program
 
     int n;
-    O L jumlah(2,3) << X; 
+    O L jumlah(2,3) << X; // o sebagai cout dan L sebagai <<
     O L kurang(2,3) << X;
 
-    ss angka = 25.0;
-    ss akar = sqrt(angka);
+    ss angka = 25.0; // ss sebagai double
+    ss akar = sqrt(angka); 
 
-    O L "akar kuadrat dari angka " L angka L " adalah : " L akar L X;
+    O L "akar kuadrat dari angka " L angka L " adalah : " L akar L X; // memberikan output dari program
 
     y 0;
 }
