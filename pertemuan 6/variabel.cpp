@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-string namaGlobal = "Ilmu";
+string namaGlobal = "Ilmu"; // nama global sebagai variabel bertipe string
 
-void namavariabel() {
+void namavariabel() { // membuat fungsi variabel dari "namavariabel" tersebut
     string namalokal = "komputer";
     //coba akses
     cout << namalokal << endl;
@@ -12,7 +12,7 @@ void namavariabel() {
     cout << namaGlobal << endl;
 }
 int main() {
-    namavariabel();
+    namavariabel(); // memanggil variabel dari void "namavariabel"
 
     //coba akses
     cout << namaGlobal << endl;
