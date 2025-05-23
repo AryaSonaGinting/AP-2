@@ -2,13 +2,13 @@
 using namespace std;
 
 int main() {
-    string password, sandi, expected = "";
+    string password, sandi, expected = ""; //variabel password, sandi dan expected sebagai string kosong
 
     cout << "Masukkan kata sandi : ";
-    cin >> password;
+    cin >> password; // input password
 
     cout << "Masukkan kata : ";
-    cin >> sandi;
+    cin >> sandi; // input sandi
 
     // Membuat string "expected" berdasarkan pola tertentu
     for (int i = 0; i < password.length(); i++) {
