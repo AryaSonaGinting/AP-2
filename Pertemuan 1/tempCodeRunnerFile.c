@@ -1,20 +1,41 @@
-#include <iostream>
+#include <stdio.h> // header untuk C
+#include <conio.h> // header untuk fungsi getch()
+#include <string.h> // diperlukan untuk fungsi strlen (jika trimming newline)
 
 int main() {
-    // Deklarasi variabel
-    double angka1, angka2, hasil;
+    char nama[50]; //deklarasi array karakter untuk nama maks.49 karakter
+    int nim; //deklarasi variabel integer menyimpan nim
+    char kom[2]; // deklarasi array menyimpan kom
+    float ip; // deklarasi varibel float menyimpan ip
 
-    // Meminta input dari pengguna
-    std::cout << "Masukkan angka pertama: ";
-    std::cin >> angka1;
-    std::cout << "Masukkan angka kedua: ";
-    std::cin >> angka2;
+    printf("Hello World\n"); // fungsi keluaran pada C
 
-    // Menjumlahkan angka
-    hasil = angka1 + angka2;
+    printf("Masukkan nama : ");
+    fgets(nama, sizeof(nama), stdin); // get string
+    nama[strcspn(nama, "\n")] = 0; // hapus newline
 
-    // Menampilkan hasil
-    std::cout << "Hasil penjumlahan: " << hasil << std::endl;
+    printf("Masukkan nim : ");
+    scanf("%d", &nim); // fungsi masukan pada C
 
-    return 0;
+    getchar(); // membersihkan newline sisa dari scanf
+
+    printf("Masukkan kom : ");
+    fgets(kom, sizeof(kom), stdin); 
+    kom[strcspn(kom, "\n")] = 0; // hapus newline
+
+    printf("Masukkan ip : ");
+    scanf("%f", &ip); 
+
+    /* Untuk Output */
+    printf("Nama : ");
+    puts(nama); // put string, digunakan untuk string dalam bentuk array char
+
+    printf("NIM : %d\n", nim); // menampilkan nim
+
+    printf("KOM : ");
+    puts(kom); //menampilkan kom
+    printf("IP : %f\n", ip); //menampilkan ip
+
+    printf("press any button to continue...");
+    getch(); //menunggu input karakter sebelum console
 }
